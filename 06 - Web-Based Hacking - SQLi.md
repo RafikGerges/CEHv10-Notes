@@ -224,7 +224,7 @@
     - Usually is when data pulled can fit into data exported (where data goes to a web table)
     - Best for using UNION queries
   - **Out-of-band SQL injection** - uses different communication channels (e.g. export results to file on web server)
-  - **Blind/inferential** - error messages and screen returns don't occur; use Timing delay and Boolean exploitation to know(example: WAITFOR DELAY '0:0:10'– and sleep() which doesn't consume processor resources).
+  - **Blind/inferential SQLi** - time-intensive because the database should generate a new statement for each newly recovered bit , error messages and screen returns don't occur; use Timing delay and Boolean exploitation to know(example: WAITFOR DELAY '0:0:10'– and sleep() which doesn't consume processor resources).
   - **UNION SQL injection** - uses the UNION SQL operator to combine two or more malicious queries into a single statement. This allows the attacker to get a single result containing responses from all the malicious queries(ORDER BY 10–).
   
   In a Piggybacked SQL injection attack, an attacker injects an additional malicious query to the original query. The original query remains unmodified, and the attacker’s query is piggybacked on the original query. the attacker concatenates the delimiter (;) and malicious query to the original query as given below ( SELECT * FROM EMP WHERE EMP.EID = 1001 AND EMP.ENAME = ’Bob’; DROP TABLE DEPT;)
