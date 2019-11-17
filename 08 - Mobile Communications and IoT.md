@@ -205,6 +205,7 @@
       
   - **Launching Attacks**
     - **Tools**
+      - Firmalyzer : enables device vendors to perform automated security assessment on IoT firmware, for config and application vulnerabilities, assess firmware compliance, cryptographic issues, and uses advanced queries.
       - KillerBee
       - JTAGulator
       - Attify
