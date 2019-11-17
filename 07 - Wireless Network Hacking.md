@@ -84,6 +84,7 @@
 - **Network Discovery**
   - Wardriving(WiFiFoFum), warflying, warwalking, warchalking etc.
    - with tools such as WiFiExplorer, WiFiFoFum, OpenSignalMaps, WiFinder
+  - **Netcut** - is an android app that allows attacker to identify target devices and block their access to WIFI
   - **WIGLE** - map for wireless networks
   - **NetStumbler** - tool to find networks
   - **Kismet** - wireless packet analyzer/sniffer that can be used for discovery
@@ -101,6 +102,7 @@
 
 - SSID Cloaking - Keep certain default wireless messages from broadcasting the ID to everyone.
 - Disable SSID Broadcast
+
 ### <u>Wireless Attacks</u>
 
 - **Rogue Access Point** - places an access point controlled by an attacker
@@ -126,6 +128,10 @@
 - **Jamming Attack**
   - Jamming wireless signal RFcrack -j
 - **Beacon Flood** - Generating thousands of counterfeit 802.11 beacons to make it hard for clients to find a legitimate AP.
+  
+  
+- **HackRF One** - Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
+- **HackRF One** - More towards Rolling code attacks and can jam as well
   
 ### <u>Wireless Encryption Attacks</u>
 
