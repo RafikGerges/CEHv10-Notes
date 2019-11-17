@@ -26,17 +26,23 @@
     - **Tools**
       - KingoRoot
       - TunesGo
-      - OneClickRoot
       - MTK Droid
+      - Unrevoked
+      - OneClickRoot - Low importance
+
 - **iOS** - platform built by Apple
   - **Jailbreaking** - different levels of rooting an iOS device
     - **Tools**
-      - evasi0n7
-      - GeekSn0w
+      - Yalu
+      - Velonzy
+      - Yaig
       - Pangu
-      - Redsn0w
-      - Absinthe
       - Cydia
+      - evasi0n7 - Low importance
+      - GeekSn0w - Low importance
+      - Redsn0w - Low importance
+      - Absinthe - Low importance
+   
     - **Techniques**
       - **Untethered** - kernel remains patched after reboot, with or without a system connection, can start-up normally
       - **Semi-Tethered** - reboot no longer retains patch; must use installed jailbreak software to re-jailbreak, can start-up normally
@@ -59,6 +65,8 @@
   - **Pairing mode** - how the device deals with pairing requests
     - **Pairable** - accepts all requests
     - **Nonpairable** - rejects all connection requests
+ - **Android Vulnerability Scanning** - X-Ray  
+ - **Sandbox** - helps protect mobile system users by limiting the resources that mobile app can access in the mobile platform. 
 
 ### <u>Mobile Attacks</u>
 
@@ -72,11 +80,16 @@
   - **Spyware**
     - Mobile Spy
     - Spyera
+    
+- Harden Browser permission rules - protect employees from clickjacking attacks
+- Block Text from the internet - feature from provider that helps protect users from phishing
 - Mobile platform features such as Find my iPhone, Android device tracking and the like can be hacked to find devices, etc.
 - **Mobile Attack Platforms** - tools that allow you to attack from your phone
   - Network Spoofer
-  - DroidSheep
+  - DroidSheep - Android tool for web session hijacking using lincap and arpspoof
   - Nmap
+  - LOIC (Low Orbit Ion Cannon) - Dos/DDoS runs from mobile app also.
+  - Netcut - is an android app that allows attacker to identify target devices and block their access to WIFI
 - **Bluetooth Attacks**
   - **Bluesmacking** - denial of service against device
   - **Bluejacking** - sending unsolicited messages
@@ -92,7 +105,8 @@
   - **PhoneSnoop** - good spyware option for Blackberry
   - **Super Bluetooth Hack** - all-in-one package that allows you to do almost anything
   - **HackRF One** - Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
-
+  - **HackRF One** - More towards Rolling code attacks and can jam as well
+  
 ### <u>IoT Architecture</u>
 
 - **Definition** - a collection of devices using sensors, software, storage and electronics to collect, analyze, store and share data
@@ -183,12 +197,14 @@
     - **Tools**
       - Nmap (nmap -6 to identify IPv6 capability)
       - RIoT Vulnerability Scanner: Retina IoT vulnerability scanner identify at-risk IoT devices, such as IP cameras, DVRs, printers, routers, etc. This tool gives you an attacker’s view of all the IoT devices and their associated vulnerabilities
-      - beSTORM
+      - beSTORM -  Smart fuzzer and Discovers buffer overflow through black-box testing
+      - Rapid7 Metasploit
       - IoTsploit
       - IoT Inspector
+      - IoT Seeker
+      
   - **Launching Attacks**
     - **Tools**
-      - Firmalyzer : find buffer overflow vulnerabilities present in the system, automated security assessment on IoT devices (firmware)  to identify configuration and application vulnerabilities.
       - KillerBee
       - JTAGulator
       - Attify
