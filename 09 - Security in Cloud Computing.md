@@ -59,6 +59,7 @@
   - This is more broadly defined as using something other than the direct interface to attack a system
 - **Abuse and Nefarious Use of Cloud services** - Presence of weak registration systems, Attackers create anonymous access to cloud services and perpetrate various attacks such as password and critical cracking, building rainbow tables, CAPTCHA-solving farms, launching dynamic attack points, hosting exploits on cloud platforms, hosting malicious data, Botnet command or control, DDoS, etc.
 - **privilege escalation** - A mistake in the access allocation system such as coding errors, design flaws, and others can result in a customer, third party, or employee obtaining more access rights than required. Can be caused also by AAA vulnerabilities, user-provisioning and de-provisioning vulnerabilities, hypervisor vulnerabilities, unclear roles and responsibilities, misconfiguration, and others.
+- **Side-Channel Attack** - Attacker runs a machine on same physical host of victims VM,  and take advantage from shared physical resources of the phyiscal host and tries to steal the chryptographic keys
 
 
 
@@ -88,6 +89,7 @@
 - **Cybersquatting** - involves conducting phishing scams by registering a domain name that is similar to a cloud service provider.
 - **Domain hijacking** - Involves stealing a cloud service provider’s domain name.
 - **Domain snipping** - Involves registering an elapsed domain name.
+- **DNS Poisoning** - Poisoning DNS server or client cache to go into the attacker's website.
 
 
 ### <u>Cloud Security Control Layers</u>
