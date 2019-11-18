@@ -2,11 +2,13 @@
 
 <u>Windows Security Architecture</u>
 
-- Authentication credentials stored in SAM file
+- Authentication credentials stored in SAM file in one-way hash
+- Windows Server 2003 AD is vulnerable to rainbow table attack.
 - File is located at C:\windows\system32\config
 - Older systems use LM hashing.  Current uses NTLM v2 (MD5)
 - Windows network authentication uses Kerberos
 - **LM Hashing**
+  - LM hashes limit the password length to a maximum of 14 characters.
   - Splits the password up.  If it's over 7 characters, it is encoded in two sections.
   - If one section is blank, the hash will be AAD3B435B51404EE
   - Easy to break if password  is 7 characters or under because you can split the hash
@@ -154,8 +156,8 @@
     - **Tools**
       - NBNSpoof
       - Pupy
-      - Metasploit
-      - Responder
+      - Metasploit - **Creat route statement to pivot on a LAN**
+      - Responder 
     - LLMNR uses UDP 5355
     - NBT-NS uses UDP 137
   - Active online attacks are easier to detect and take a longer time
