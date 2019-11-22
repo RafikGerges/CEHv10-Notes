@@ -177,6 +177,7 @@
 - **Buffer Overflow** (Smashing the stack) - attempts to write data into application's buffer area to overwrite adjacent memory, execute code or crash a system
   - Inputs more data than the buffer is allowed
   - Includes stack, heap, NOP sleds and more
+  - **heap spraying attack** is a remote code execution exploit that allows the attacker to insert arbitrary code in the system's heap memory space
   - **Canaries** - systems can monitor these - if they are changed, they indicate a buffer overflow has occurred; placed between buffer and control data
 - **XSS** (Cross-site scripting) - inputting javascript into a web form that alters what the page does
   - Can also be passed via URL (http://IPADDRESS/";!--"<XSS>=&{()}
