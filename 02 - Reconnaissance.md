@@ -156,6 +156,7 @@
 
 **Other Tools**
 - **Maltego** - tool allows analysts and pen testers to examine links between data/entities using graphs and link analysis
+- **Zenmap** - GUI version of NMAP and helps visualize the network through scanning
 - **OSRFramework** - uses open source intelligence to get the collection of potentially actionable, overt, and publicly available information about target
 - **Web Spiders** - obtain information from the website such as pages, etc.
 - **Social Engineering Tools**
