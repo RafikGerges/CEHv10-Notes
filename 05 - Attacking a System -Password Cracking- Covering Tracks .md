@@ -246,9 +246,8 @@
     - SYSEVENT.EVT (system): Driver failure, things not operating correctly
     - APPEVENT.EVT (applications)
 
-
 - Modify/delete logs
-- Meterpreter shell
+- Meterpreter shell ( Clearev Command will clear all logs in a windows machines)
 - Clear_Event_Viewer_Logs.bat tool
 - Clearlogs.exe utility ( -app clears the app logs)
 - Windows Event Viewer
@@ -260,6 +259,7 @@
   - history -W - clears current shell history only
   - shred /.bash_history - removes history after rewriting it with dummy data 
 
+- Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder.
 
 
 - In Windows, **Alternate Data Stream** (ADS) can hide files
