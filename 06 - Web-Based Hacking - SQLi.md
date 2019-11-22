@@ -167,7 +167,7 @@
 - **Web 2.0** - dynamic applications; have a larger attack surface due to simultaneous communication
 - **connection stream parameter pollution (CSPP) attack** - Injecting parameters into a connection string using semicolons as a separator
 - **File Injection** - attacker injects a pointer in a web form to an exploit hosted elsewhere
-- **Command Injection** -involves injection of malicious html code through a web application, attacker gains shell access using Java or similar
+- **Command Injection** -involves injection of malicious html code through a web application, attacker gains shell access using **Java RMI** or similar.
 - **Changing hidden form values** - authorization attack using hidden fields. When a user selects anything on an HTML page, it stores the selection as form field values and sends it to the application as an HTTP request (GET or POST)
 - **Water hole attack** - attacker injects malicious script/code into the web application that can redirect the webpage and download the malware onto the victim’s machine
 - **LDAP Injection** - exploits applications that construct LDAP statements
