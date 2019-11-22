@@ -138,7 +138,7 @@
 - **Two-Factor** - when you have two types of authentication such as something you know (password) and something you have (access card)
 
 - **Strength of passwords** - determined by length and complexity
-  - ECC says that both should be combined for the best outcome
+  - ECC says that min 8 characters long , includes 1 upper, 1 number, 1 special char
   - Complexity is defined by number of character sets used (lower case, upper case, numbers, symbols, etc.)
   - LAN Manager uses a 14-byte password
   
@@ -146,7 +146,7 @@
 
 ### <u>Password Attacks</u>
 
-- **Non-electronic** - social engineering attacks - most effective.
+- **Non-electronic** - social engineering attacks - most effective >> Educate users
   - Includes shoulder surfing and dumpster diving
 - **Active online** - done by directly communicating with the victim's machine
   - Includes dictionary and brute-force attacks, hash injections, phishing, Pharming, Trojans, spyware, keyloggers and password guessing
@@ -163,7 +163,7 @@
   - Active online attacks are easier to detect and take a longer time
   - Can combine "net" commands with a tool such as **NetBIOS Auditing tool** or **Legion** to automate the testing of user IDs and passwords
   - **Tools**
-    - Hydra
+    - Hydra - capture and crack web passwords
     - Metasploit
 - **Passive online** - sniffing the wire in hopes of intercepting a password in clear text or attempting a replay attack or man-in-the-middle attack
   - **Tools**
@@ -195,7 +195,6 @@
   - Social engineering a user to run an application
 - ECC refers executing applications as "owning" a system
 - **Executing applications** - starting things such as keyloggers, spyware, back doors and crackers
-
 - **g++ hackersExploit.cpp -o calc.exe** - compile the newest C++ exploit and name it calc.exe
 - **USB Dumper** - copies the files and folders from the flash drive silently when connected to the PC
 
@@ -229,8 +228,8 @@
 - **Hardware** - hide malware in devices or firmware such as a hard drive, system BIOS, or network card
 - **Boot loader level** - replace boot loader with one controlled by hacker
 - **Application level** - directed to replace valid application files with Trojans
-- **Kernel level** - MOST DIFFICULT TO DETECT, attack boot sectors and kernel level replacing kernel code with back-door code; most dangerous and 
-- **Library level** - works higher up in OS, patches, hooks, use SYSTEM LEVEL CALLS with backdoor versions.
+- **Kernel level** - MOST DIFFICULT TO DETECT, attack boot sectors and kernel level replacing kernel code with back-door code; most dangerous.
+- **Library level** - patching-style function,works higher up in OS, patches, hooks, use/replaces SYSTEM LEVEL CALLS with backdoor versions, that obscure/hide hacker identity
 - One way to detect rootkits is to map all the files on a system and then boot a system from a clean CD version and compare the two file systems
 
 
@@ -240,7 +239,7 @@
   - C:\>Auditpol.exe \\ IP address /disable  - Used initiating null session, reveals the status and disable the audit
   - C:\>auditpol \\<ip address of target>   - Used initiating null session with host
   - auditpol /get /category:*  - View audit settings
-  - Audit.exe - used to turn on thr audit again
+  - Audit.exe - used to turn on the audit again
   
   - SECEVENT.EVT: used by an attacker to manipulate the log files with failed logins, accessing files without privileges
     - SYSEVENT.EVT (system): Driver failure, things not operating correctly
