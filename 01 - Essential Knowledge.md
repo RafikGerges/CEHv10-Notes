@@ -266,6 +266,9 @@ Confidentiality != authentication - MAC address spoofing is an authentication at
       - *Integrity* - Ensures that only participants know when assets and processes change
       - *Alarm*  - Notifies participants when interactions occur
       
+
+- **Electronic communications privacy act** - US law makes it illegal to capture/intercept data/voice/mails/storage without authorization. 
+
 - **ISO 27001** - Security standard based on the British BS7799 standard, focuses on secuirty governance
 
 - **NIST-800-53** -  Catalogs security and privacy controls for federal information systems, created to help implementation of FISMA
