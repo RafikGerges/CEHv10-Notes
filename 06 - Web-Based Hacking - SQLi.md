@@ -144,6 +144,7 @@
     - **NOPS** used for buffer-overflow type operations
 - **Shellshock** - causes Bash to unintentionally execute commands when commands are concatenated on the end of function definitions
 - Attackers use GET and CONNECT requests to use vulnerable web servers as Proxies
+- **MSFvenom** - Used for Shellcode which is code that when run creates a reverse remote shell back to the creator. Attacks many platforms Win, Linux/Unix, FreedBSD, Android, OSX, Java,...etc.
 
 
 ### <u>Web Applications </u>
