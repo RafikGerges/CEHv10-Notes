@@ -105,7 +105,7 @@
   - **PhoneSnoop** - good spyware option for Blackberry
   - **Super Bluetooth Hack** - all-in-one package that allows you to do almost anything
   - **HackRF One** - Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
-  - **HackRF One** - More towards Rolling code attacks and can jam as well
+  - **RFcrack** - More towards Rolling code attacks and can jam as well
   
 ### <u>IoT Architecture</u>
 
