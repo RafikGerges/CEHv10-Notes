@@ -253,7 +253,7 @@
     - Absinthe
     - BobCat
     - DataThief - automate SQL injections and exploit a database by forcing a given web application to connect to another database controlled by a hacker
-     a. Marathon Tool - is a POC for using heavy queries to perform a Time-Based Blind SQL Injection attack
+    - Marathon Tool - is a POC for using heavy queries to perform a Time-Based Blind SQL Injection attack
 
 SQLiX: SQLiX is an SQL Injection scanner coded in Perl. It is able to crawl, detect SQL injection vectors, identify the back-end database, and grab function call/UDF results (even execute system commands for MS-SQL). (Source: https://www.owasp.org/index.php/Category:OASP_SQLiX_Project)
 
@@ -290,7 +290,7 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:""SQL Injection attempt on Fin
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:”SQL Injection – Paranoid”; flow:to_server,established;uricontent:”.pl”;pcre:”/(\%27)|(\’)|(\-\-)|(%23)|(#)/i”; classtype:Web-application-attack; sid:9099; rev:5
 
--**SELECT @@VERSION** - The string “SELECT” can be represented by the hexadecimal number 0x73656c656374, which most likely will not be detected by a signature protection mechanism. The DBMS is Microsoft SQL Server and the correct SQL statement to retrieve the SQL server database version is SELECT @@VERSION
+- **SELECT @@VERSION** - The string “SELECT” can be represented by the hexadecimal number 0x73656c656374, which most likely will not be detected by a signature protection mechanism. The DBMS is Microsoft SQL Server and the correct SQL statement to retrieve the SQL server database version is SELECT @@VERSION
 
 - **char()** a "MySQL" function converts hexadecimal and decimal values into characters to avoid detection.
  Oracle ASCIISTR function takes a string and returns an ASCII
