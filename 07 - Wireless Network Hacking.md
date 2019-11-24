@@ -70,8 +70,8 @@
 | WPA2              | AES-CCMP   | 48             | 128               | CBC-MAC (CCMP)  |
 
 
--Protected Extensible Authentication Protocol(PEAP)/Protected EAP : encapsulates the Extensible Authentication Protocol (EAP) within an encrypted and authenticated Transport Layer Security (TLS) tunnel.
--Lightweight EAP (LEAP): Cisco Proprietery verion of protected EAP, it changes the WEP keys dynamically upon several authentications during the session.
+- Protected Extensible Authentication Protocol(PEAP)/Protected EAP : encapsulates the Extensible Authentication Protocol (EAP) within an encrypted and authenticated Transport Layer Security (TLS) tunnel.
+- Lightweight EAP (LEAP): Cisco Proprietery verion of protected EAP, it changes the WEP keys dynamically upon several authentications during the session.
 
 ### <u>Wireless Hacking</u>
 
@@ -131,7 +131,7 @@
   
   
 - **HackRF One** - Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
-- **HackRF One** - More towards Rolling code attacks and can jam as well
+- **RFcrack** - More towards Rolling code attacks and can jam as well
   
 ### <u>Wireless Encryption Attacks</u>
 
