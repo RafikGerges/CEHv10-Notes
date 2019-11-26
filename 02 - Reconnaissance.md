@@ -37,6 +37,7 @@
   - index of - directory listings
   - info: - contains Google's information about the page
   - intitle: - string in title
+  - allintitle: - group search intitle
   - inurl: - string in url
   - link: - finds linked pages
   - related: - finds similar pages
@@ -88,7 +89,8 @@
   - Name lookup - UDP 53
   - Zone transfer - TCP 53
 
-- Zone transfer replicates all records
+- Zone transfer replicates **ALL** records
+- **HINFO** is a resource type that identifies values for CPU type and operating system
 
 - **Name resolvers** answer requests
 
@@ -135,6 +137,7 @@
 
 - **Nslookup** - performs DNS queries
 
+  - Interactive (>) , Non interactive (writing full command "nslookup -d xxxxx.com")
   - nslookup [ - options ] [ hostname ]
   - interactive zone transfer
     - nslookup
@@ -145,6 +148,8 @@
 - **Dig** - unix-based command like nslookup
 
   - dig @server name type
+
+-  Split-horizon DNS (also known as split-view or split DNS) is a method of providing different answers to DNS queries based on the source address of the DNS request
 
 **Network Footprinting**
 
@@ -158,6 +163,11 @@
 - **Maltego** - tool allows analysts and pen testers to examine links between data/entities using graphs and link analysis
 - **Zenmap** - GUI version of NMAP and helps visualize the network through scanning
 - **OSRFramework** - uses open source intelligence to get the collection of potentially actionable, overt, and publicly available information about target
+- domainfy.py - domains
+- mailfy.py - mails
+- searchfy.py - search profiles with full names
+- usufy.py - verifies if a username/profile exists in up to 306 different platforms
+
 - **Web Spiders** - obtain information from the website such as pages, etc.
 - **Social Engineering Tools**
   - Social Engineering Framework (SEF)
@@ -166,3 +176,5 @@
 **Computer Security Incident Response Team** (CSIRT) - point of contact for all incident response services for associates of the DHS
 
 - "nc -l -p 2222 | nc 10.1.0.43 1234" - Netcat will listen on port 2222 and output anything received to a remote connection on 10.1.0.43 port 1234
+
+- CSIRT provides an incident response service to enable a reliable and trusted single point of contact for reporting computer security incidents worldwide.
