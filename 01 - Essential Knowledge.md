@@ -199,10 +199,10 @@ Confidentiality != authentication - MAC address spoofing is an authentication at
 
 ### <u>Hacking Phases</u>
 
-1. **Reconnaissance**  - gathering evidence about targets
-2. **Scanning & Enumeration** - obtaining more in-depth information about targets
+1. **Reconnaissance(Footprinting) **  - gathering evidence about targets
+2. **Scanning &(fingerprinting) & Enumeration** - obtaining more in-depth information about targets
 3. **Gaining Access** - attacks are leveled in order to gain access to a system
-4. **Maintaining Access** - items put in place to ensure future access
+4. **Maintaining Access** - items put in place to ensure future access >>>> Zombies are used
 5. **Covering Tracks** - steps taken to conceal success and intrusion
 
 ### <u>Types of Reconnaissance</u>
@@ -286,7 +286,7 @@ tect patient medical records and health information shared between doctors, hosp
 
 - **COBIT** - "Control Object for Information and Related Technology" IT Governance framework and toolset , created by ISACA and ITGI
 
-- **SOX** - "Sarbanes-Oxley Act" Law that requires publicly traded companies to submit to independent audits and to properly disclose finical information
+- **SOX** - "Sarbanes-Oxley Act" Law that requires publicly traded companies to submit to independent audits and to properly disclose finical information, combat corporate and accounting fraud.
 
 - **GLBA** - "U.S Gramm-Leach-Bliley Act" Law that protects the confidentiality and integrity of personal information that is collected by financial institutions.
 
