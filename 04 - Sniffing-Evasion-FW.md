@@ -147,11 +147,18 @@
     - ip.addr==172.17.15.12 && tcp.port==23 - displays telnet packets containing that IP
     - tcp.flags==0x16 - filters TCP requests with ACK flag set
     - wireshark –capture –local –masked 192.168.8.0 –range 24
+    - The assigned flag decimal numbers are FIN = 1, SYN = 2, RST = 4, PSH = 8, ACK = 16, and URG = 32. Adding these numbers together (for example, SYN + ACK = 18) allows you to simplify a Wireshark filter. For example, tcp.flags == 0x2 looks for SYN packets, tcp.flags == 0x16 looks for ACK packets, and tcp.flags == 0x18 looks for both 
+
+
 - **tcpdump**
   - Recent version is WinDump (for Windows)
   - **Syntax**
     - tcpdump flag(s) interface
     - tcpdump -i eth1 - puts the interface in listening mode
+    - tcpdump -i eth0 -w my.log - writes to my.log
+   
+- **tcpflow** is similar to ‘tcpdump’, in that both process packets from the wire or from a stored file. But it’s different in that it reconstructs the actual data streams and stores each flow in a separate file for later analysis.”
+
 - **tcptrace**
   - Analyzes files produced by packet capture programs such as Wireshark, tcpdump and Etherpeek
 - **Netstumbler** - Wireless packet capture
@@ -177,7 +184,8 @@
 - Use SSH and SSL
 - DNS Security (DNSSEC): Implement Domain Name System Security Extension (DNSSEC) to prevent DNS spoofing attacks.
 - Use NMAP allows you to check if a target on a local Ethernet has its network card in promiscuous mode
-  
+- xARP - tool to discover arp spoofing
+- ARPWALL - It gives an early warning when an ARP attack occurs and simply blocks the connection.
 
 ### <u>Devices To Evade</u>
 
@@ -192,6 +200,13 @@
   - Active - Take action(IPS)
   
 - **IDS/IPS** Tools
+- IDS evasion scanner/sniffer:  
+  - Libwhisker 
+  - Whisker
+  - Fragroute
+  - ADMmutate
+  - Inundator
+
 - **Snort** - a  widely deployed IDS that is open source
   - 3 Actions : Alert, Log, Pass
   - Includes a sniffer, traffic logger and a protocol analyzer
