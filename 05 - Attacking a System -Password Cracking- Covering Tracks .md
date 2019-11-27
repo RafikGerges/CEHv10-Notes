@@ -5,6 +5,7 @@
 - Authentication credentials stored in SAM file in one-way hash
 - Windows Server 2003 AD is vulnerable to rainbow table attack.
 - File is located at C:\windows\system32\config
+- copy from system restore (c:\windows\repair)
 - Older systems use LM hashing.  Current uses NTLM v2 (MD5)
 - Windows network authentication uses Kerberos
 - **LM Hashing**
@@ -53,6 +54,8 @@
 - **MMC**
   - Microsoft Management Console - used by Windows to administer system
   - Has "snap-ins" that allow you to modify sets (such as Group Policy Editor)
+  - compmgmt.msc
+  - %windir%\system32\drivers\etc\services - IANA well known ports
 
 ### <u>Linux Security Architecture</u>
 
@@ -64,8 +67,9 @@
   - **/etc** - all administration files and passwords.  Both password and shadow files are here
   - **/home** - holds the user home directories
   - **/mnt** - holds the access locations you've mounted
-  - **/sbin** - system binaries folder which holds more administrative commands
-  - **/usr** - holds almost all of the information, commands and files unique to the users
+  - **/sbin** - system binaries folder which holds administrative commands and daemons.
+  - **/usr** - holds almost all of the information, commands and files unique to the users.
+  
 - Linux Commands
 
 | Command  | Description                                                  |
@@ -82,7 +86,7 @@
 | rm       | Removes files.  -r option recursively removes all directories and subdirectories |
 | su       | Allows you to perform functions as another user (super user) |
 
-- Adding an ampersand after a process name indicates it should run in the background.
+- Adding an ampersand(&) after a process name indicates it should run in the background and closes when user logs off.
 - **pwd** - displays curennt directory
 - **chmod** - changes the permissions of a folder or file
   - Read is 4, write is 2 and execute is 1
@@ -93,6 +97,8 @@
 - Passwords are stored in /etc/shadow for most current systems
 - /etc/password stores passwords in hashes.
 - /etc/shadow stores passwords encrypted (hashed and salted) and is only accessible by root
+- The ps command is used in Linux to display processes
+- Iptables -  It must be executed with root privileges and allows for stateful inspection. On most Linux systems, iptables is installed as /usr/sbin/iptables.
 
 ### <u>OS X Security</u>
 - **OS X** allows loading of weak dylibs dynamically that is exploited by attackers to place a malicious dylib(hijacking) in the specified location
@@ -274,6 +280,8 @@
 - You can also hide files by attributes
   - In Windows:  attrib +h filename
   - In Linux, simply add a . to the beginning of the filename
+  - LADS, ADS Spy, Sfind are tools to discover ADS
+  
   
 - Can hide data and files with steganography
 - Also need to worry about clearing logs
@@ -282,6 +290,7 @@
   - Option is to corrupt a log file - this happens all the time
   - Best option is be selective and delete the entries pertaining to your actions.
 - Can also disable auditing ahead of time to prevent logs from being captured
+
 
 - **Methods**
   - Reverse HTTP Shell
