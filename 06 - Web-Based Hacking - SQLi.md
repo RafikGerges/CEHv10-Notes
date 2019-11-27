@@ -23,7 +23,9 @@
 - **A9 - Using Components with Known Vulnerabilities** - libraries and frameworks that have known security holes
 - **A10 - Insufficient Logging and Monitoring** - not having enough logging to detect attacks
 
-**WebGoat** - project maintained by OWASP which is an insecure web application meant to be tested
+- **WebGoat** - project maintained by OWASP which is an insecure web application meant to be tested
+- is based on a black-box testing mentality
+- Uses Java or .NET
 
 ### <u>Web Server Attack Methodology</u>
 
@@ -76,16 +78,17 @@
 - IIS 5 had a ton of bugs - easy to get into
 - **N-Tier  Architecture** - distributes processes across multiple servers; normally  as three-tier: Presentation (web), logic (application) and data (database)
 - server type under an N-tier architecture is A group of servers with a unique role
+- Common Gateway Interface (CGI) is a standardized method for transferring information between a web server and an executable
 - **Error Reporting** - should not be showing errors in production; easy to glean information
 - **HTML** - markup language used to display web pages
 - **HTTP Request Methods**
-  - **GET** - retrieves whatever information is in the URL; sending data is done in URL
+  - **GET** - retrieves whatever information is in the URL; encodes the input into the Uniform Resource Identifier (URI)
   - **HEAD** - identical to get except for no body return
   - **POST** - sends data via body - data not shown in URL or in history
   - **PUT** - requests data be stored at the URL
   - **DELETE** - requests origin server  delete resource
   - **TRACE** - requests application layer loopback of message
-  - **CONNECT** - reserved for use with proxy
+  - **CONNECT** - reserved for use with proxy - MOST Dangerous
   - Both POST and GET can be manipulated by a web proxy
 - **HTTP Error Messages**
   - **1xx: Informational** - request received, continuing
@@ -142,9 +145,11 @@
     - **Payload** contains the arbitrary code if exploit is successful
     - **Auxiliary** used for one-off actions (like a scan)
     - **NOPS** used for buffer-overflow type operations
-- **Shellshock** - causes Bash to unintentionally execute commands when commands are concatenated on the end of function definitions
+- **Shellshock** - causes Bash to unintentionally execute commands when commands are concatenated on the end of function definitions, Through web servers utilizing CGI (Common Gateway Interface)
 - Attackers use GET and CONNECT requests to use vulnerable web servers as Proxies
 - **MSFvenom** - Used for Shellcode which is code that when run creates a reverse remote shell back to the creator. Attacks many platforms Win, Linux/Unix, FreedBSD, Android, OSX, Java,...etc.
+- LDAP Injection - The addition of the )(&) characters turns the expression to "user1)(&)"
+
 
 
 ### <u>Web Applications </u>
@@ -176,7 +181,7 @@
   - SOAP uses XML to format information
   - Messages are "one way" in nature
 - **Buffer Overflow** (Smashing the stack) - attempts to write data into application's buffer area to overwrite adjacent memory, execute code or crash a system
-  - Inputs more data than the buffer is allowed
+  - Inputs more data than the buffer is allowed - gets() is a common source of buffer overflow vulnerabilities
   - Includes stack, heap, NOP sleds and more
   - **heap spraying attack** is a remote code execution exploit that allows the attacker to insert arbitrary code in the system's heap memory space
   - **Canaries** - systems can monitor these - if they are changed, they indicate a buffer overflow has occurred; placed between buffer and control data
