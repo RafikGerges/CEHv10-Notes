@@ -25,17 +25,20 @@
   - **Cloud Provider** - purveyor of products and services
   - **Cloud Broker** - manages use, performance and delivery of services as well as relationships betwen providers and subscribers
   - **Cloud Auditor** - independent assor of cloud service an security controls
-- **FedRAMP** - regulatory effort regarding cloud computing
+- **FedRAMP** - Government regulatory effort regarding cloud computing
 - **PCI DSS** - deals with debit and credit cards, but also has a cloud SIG
+- **CSA** - Best practices for cloud security
+- **SOA** - an architectural pattern in computer software design in which application components provide services to other components via a communications protocol, typically over a network
 
 ### <u>Cloud Security</u>
 
 - Problem with cloud security is what you are allowed to test and what should you test
 - Another concern is  with a hypervisor, if the hypervisor is compromised, all hosts on that hypervisor are as well
 - **Trusted Computing Model** - attempts to resolve computer security problems through hardware enhancements
-  - **Roots of Trust** (RoT) - set of functions within TCM that are always trusted by the OS
+  - **Roots of Trust** (RoT) - set of functions within TCM that are **always trusted by the OS**
+  - Several vendors call themselves (Tursted computed group- TCG)
 - **Tools**
-  - **CloudInspect** - pen-testing application for AWS EC2 users
+  - **CloudInspect** - pen-testing application for **AWS EC2** users
   - **CloudPassage Halo** - instant visibility and continuous protection for servers in any cloud
   - **Dell Cloud Manager**
   - **Qualys Cloud Suite**
