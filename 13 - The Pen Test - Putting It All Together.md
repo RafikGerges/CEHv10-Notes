@@ -15,6 +15,8 @@
   - **Codenomicon** - utilizes fuzz testing that learns the ested system automatically; allows for pen testers to enter new domains such as VoIP assessment, etc.
   - **Core Impact Pro** - best known, all-inclusive automated testing framework; tests everything from web applications and individual systems to network devices and wireles
   - **Metasploit** - framework for developing and executing code against a remote target machine
+    - Meterpreter - payload type operates via DLL injection and is difficult for antivirus software to pick up
+    - Rex - Is the most fundamental library in Metasploit.
   - **CANVAS** - hundreds of exploits, automated exploitation system and extensive exploit development framework
 - **Phases of Pen Test**
   - **Pre-Attack Phase** - reconnaissance and data-gathering
