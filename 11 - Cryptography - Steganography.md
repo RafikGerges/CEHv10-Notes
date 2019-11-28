@@ -80,7 +80,7 @@
 - **Algorithms**
   - **MD5** (Message Digest algorithm) - produces 128 bit hash expressed as 32 digit hexadecimal number; has serious flaws like collisions; still used for file download verification, file integrity checks, storing passwords. Use SHA-2/3
   - **SHA-1** - developed by NSA; 160-bit value output
-  - **SHA-2** - four separate hash functions; produce outputs of 224, 256, 384 and 512 bits; not widely used
+  - **SHA-2** - developed by NSA ; four separate hash functions; produce outputs of 224, 256, 384 and 512 bits; not widely used
   - **SHA-3** - uses sponge construction with XOR and premutation
   - **RIPEMD-#** - 160-bit works through 80 stages, executing 5 blocks, excuted 16 times each; twice using modulo 32 addition, RIPEMD-128/256/320 available
   - **HMAC** - Used for message authentication. uses crypto key with hash function(MD5/SHA-1) executred twice to preven from length extension attack 
@@ -143,7 +143,7 @@
 - **Certificate Revocation List** (CRL) - used to track which certificates have problems and which have been revoked
 - **Validation Authority** - stores certificates and used to validate certificates via Online Certificate Status Protocol (OCSP)
 - **Trust Model** - how entities within an enterprise deal with keys, signatures and certificates
-- **Cross-Certification** - allows a CA to trust another CS in a completely different PKI; allows both CAs to validate certificates from either side
+- **Cross-Certification/Web-of-trust** - allows a CA to trust another CS in a completely different PKI; allows both CAs to validate certificates from either side
 - **Single-authority system** - CA at the top
 - **Hierarchial trust system** - CA at the top (root CA); makes use of one or more RAs (subordinate CAs) underneath it to issue and manage certificates
 
@@ -164,7 +164,8 @@
 - Some root CAs are automatically added to OSes that they already trust; normally are reputable companies
 - **Self-Signed Certificates** - certificates that are not signed by a CA; generally not used for public; used for development purposes
   - Signed by the same entity it certifies
- - **SSL** - uses RSA and provides channel security with Private channel, Authenticated channel, Reliable
+  - example: certificate issued by Apple’s Keychain and uses the public key to sign documents that are used throughout the network.
+ - **SSL** - uses RSA and provides channel security with Private channel, Authenticated channel, Reliable, The client creates the key after verifying the server’s identity.
  - **TLS** - uses RSA 1024 or 2048 , TLS Handshake(authentiication and exchange symmetric key) and TLS Record(encryption itself during session). 
 
 ### <u>Digital Signatures</u>
@@ -183,11 +184,12 @@
 
 - **Often-Used Encrypted Communication Methods**
   - **Secure Shell** (SSH) - secured version of telnet; uses port 22; relies on public key cryptography; SSH2 is successor and includes SFTP
-  - **Secure Sockets Layer** (SSL) - encrypts data at transport layer and above; uses RSA encryption and digital certificates; has a six-step process; largely has been replaced by TLS
+  - **Secure Sockets Layer** (SSL) - encrypts data at transport layer and above; uses RSA encryption and digital certificates; has a six-step process; largely has been replaced by TLS, The client creates the key after verifying the server’s identity.
+  
   - **Transport Layer Security** (TLS) - uses RSA 1024 and 2048 bits; successor to SSL; allows both client and server to authenticate to each other; TLS Record Protocol provides secured communication channel
   - **Internet Protocol Security** (IPSEC) - network layer tunnelling protocol; used in tunnel and transport modes; ESP encrypts each packet
-  - **PGP** - Pretty Good Privacy; Asymmetric , used for signing, compression and encryption of emails, files and directories; known as hybrid cryptosystem - features conventional and public key cryptography
-  - **S/MIME** - standard for public key encryption and signing of MIME data; only difference between this and PGP is PGP can encrypt files and drives unles S/MIME
+  - **PGP** - Pretty Good Privacy; Asymmetric , used for signing, compression and encryption of emails,disk , files and directories; known as hybrid cryptosystem - features conventional and public key cryptography
+  - **S/MIME** - standard for public key encryption and signing of MIME data; only difference between this and PGP is PGP can encrypt files and drives unlike S/MIME
   - **DHA** - It is asymmetric cryptographic algorithm. A cryptographic protocol that allows two parties to establish a shared key over an insecure channel.
   
 - **Heartbleed** - attack on OpenSSL heartbeat which verifies data was received correctly
@@ -197,7 +199,7 @@
   - Vulnerable versions include Open SSL 1.0.1 and 1.0.1f
   - CVE-2014-0160
 - **FREAK** (Factoring Attack on RSA-EXPORT Keys) - man-in-the-middle attack that forces a downgrade of RSA key to a weaker length
-- **POODLE** (Paddling Oracle On Downgraded Legacy Encryption) - downgrade attack that used the vulnerability that TLS downgrades to SSL if a connection cannot be made
+- **POODLE** (Paddling Oracle On Downgraded Legacy Encryption) - is a man-in-the-middle attack that forces a downgrade of an RSA key to a weaker length.
   - SSl 3 uses RC4, which is easy to crack
   - CVE-2014-3566
   - Also called PoodleBleed
@@ -270,3 +272,4 @@
   - Jipher
 - Keys should still change on a regular basis even though they may be "unhackable"
 - Per U.S. government, an algorithm using at least a 256-bit key cannot be cracked
+- To determine the number of keys you need symettrically with N entities, use the formula N(N – 1)/2
