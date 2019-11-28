@@ -28,7 +28,7 @@
       - TunesGo
       - MTK Droid
       - Unrevoked
-      - OneClickRoot - Low importance
+      - SuperOneClickRoot
 
 - **iOS** - platform built by Apple
   - **Jailbreaking** - different levels of rooting an iOS device
@@ -80,7 +80,7 @@
   - **Spyware**
     - Mobile Spy
     - Spyera
-    
+ 
 - Harden Browser permission rules - protect employees from clickjacking attacks
 - Block Text from the internet - feature from provider that helps protect users from phishing
 - Mobile platform features such as Find my iPhone, Android device tracking and the like can be hacked to find devices, etc.
@@ -106,7 +106,9 @@
   - **Super Bluetooth Hack** - all-in-one package that allows you to do almost anything
   - **HackRF One** - Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
   - **RFcrack** - More towards Rolling code attacks and can jam as well
-  
+  - **BBProxy** - Black berry Blackjacking - allows the attacker to use a BlackBerry device as
+a proxy between the Internet and the internal network.
+
 ### <u>IoT Architecture</u>
 
 - **Definition** - a collection of devices using sensors, software, storage and electronics to collect, analyze, store and share data
@@ -125,6 +127,7 @@
   - **Ubuntu Core** - used in robots and drones; known as "snappy"
   - **Integrity RTOS** - found in aerospace, medical, defense, industrial and automotive sensors
   - **Apache Mynewt** - used in devices using Bluetooth Low Energy Protocol
+  
 - **Methods of Communicating**
   - **Device to Device** - communicates directly with other IoT devices
   - **Device to Cloud** - communicates directly to a cloud service
@@ -210,7 +213,7 @@
       - JTAGulator
       - Attify
       - Firmeware Mod Kit : reconstruct malicious firmware from legitimate firmware in order to maintain access to the victim device
-      - HackRF One: Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
+      - HackRF One: Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an **advanced hardware and software defined radio** with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device. advanced hardware- and software.
       
   - **Gaining Access** - same objectives as normal methodology
   - **Maintaining Access** - same objectives as normal methodology
@@ -220,7 +223,7 @@
   - **SeaCat.io** - security-first SaaS technology to operate IoT products in a reliable, scalable and secure manner. It provides protection to end users, business, and data.
   
   
-- **Zigbee Framework** - Attify ZigBee framework consists of a set of tools used to perform ZigBee penetration testing. ZigBee protocol makes use of 16 different channels for all communications. Attackers use Zbstumbler from Attify Zigbee framework to identify the channel used by the target device.
+- **Zigbee Framework** - Attify ZigBee framework consists of a set of tools used to perform ZigBee penetration testing. ZigBee protocol makes use of 16 different channels for all communications. Attackers use **Zbstumbler** from Attify Zigbee framework to identify the channel used by the target device.
 
 
 
