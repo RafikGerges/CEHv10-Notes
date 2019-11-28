@@ -176,5 +176,6 @@
 **Computer Security Incident Response Team** (CSIRT) - point of contact for all incident response services for associates of the DHS
 
 - "nc -l -p 2222 | nc 10.1.0.43 1234" - Netcat will listen on port 2222 and output anything received to a remote connection on 10.1.0.43 port 1234
+- Netcat **launching a program is -e**
 
 - CSIRT provides an incident response service to enable a reliable and trusted single point of contact for reporting computer security incidents worldwide.
