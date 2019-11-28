@@ -43,7 +43,7 @@
     - **REG_BINARY** - a binary value
     - **REG_DWORD** - 32-bit unsigned integer
     - **REG_LINK** - symbolic link to another key
-  - Important Locations
+  - Important Locations to run scripts and commands automatically
     - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
     - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices
     - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce
