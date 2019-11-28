@@ -66,7 +66,7 @@
 | Wireless Standard | Encryption | IV Size (Bits) | Key Length (Bits) | Integrity Check |
 |-------------------|------------|----------------|-------------------|-----------------|
 | WEP               | RC4        | 24             | 40/104            | CRC-32          |
-| WPA               | RC4 + TKIP | 48             | 128               | Michael/CRC-32  |
+| WPA               | TKIP 	 | 48             | 128               | Michael/CRC-32  |
 | WPA2              | AES-CCMP   | 48             | 128               | CBC-MAC (CCMP)  |
 
 
@@ -86,8 +86,8 @@
    - with tools such as WiFiExplorer, WiFiFoFum, OpenSignalMaps, WiFinder
   - **Netcut** - is an android app that allows attacker to identify target devices and block their access to WIFI
   - **WIGLE** - map for wireless networks
-  - **NetStumbler** - tool to find networks
-  - **Kismet** - wireless packet analyzer/sniffer that can be used for discovery
+  - **NetStumbler** - windows tool to find networks , can't monitor **802.11n**
+  - **Kismet** - passive wireless packet analyzer/sniffer that can be used for discovery - windows/linux
   	- Works without sending any packets (passively)
   	- Can detects access points that have not been configured
   	- Works by channel hopping
@@ -132,6 +132,8 @@
   
 - **HackRF One** - Attackers use HackRF One to perform attacks such as BlueBorne or AirBorne attacks such as replay, fuzzing, jamming, etc. HackRF One is an advanced hardware and software defined radio with the range of 1MHz to 6GHz. It transmits and receives radio waves in half-duplex mode, so it is easy for attackers to perform attacks using this device.
 - **RFcrack** - More towards Rolling code attacks and can jam as well
+- **AirSnarf** - Linux Denial-of-service attacks against APs on the network
+- **Ettercap** - can be used in wirless MITM to inject html codes
   
 ### <u>Wireless Encryption Attacks</u>
 
