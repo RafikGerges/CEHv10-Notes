@@ -266,12 +266,14 @@ Confidentiality != authentication - MAC address spoofing is an authentication at
       - *Integrity* - Ensures that only participants know when assets and processes change
       - *Alarm*  - Notifies participants when interactions occur
       
+-  “The Information Systems Security Assessment Framework (ISSAF) is produced by the Open Information Systems Security Group(OISSG)
 
 - **Electronic communications privacy act** - US law makes it illegal to capture/intercept data/voice/mails/storage without authorization. 
 
 - **ISO 27001** - Security standard based on the British BS7799 standard, focuses on secuirty governance
 
 - **NIST-800-53** -  Catalogs security and privacy controls for federal information systems, created to help implementation of FISMA
+- **NIST-800-30** - Risk assessment , Threats are identified before vulnerabilities.
 
 - **ISO 27002 AND 17799** - Based on BS799 but focuses on security objectives and provides security controls based on industry best pratice
 
