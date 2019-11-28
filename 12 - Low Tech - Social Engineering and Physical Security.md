@@ -25,8 +25,8 @@
 - **Shoulder Surfing** - looking over someone's shoulder to get info
   - Can be done long distance with binoculars, etc.
 - **Eavesdropping** - listening in on conversations about sensitive information
-- **Tailgating** - attacker has a fake badge and walks in behind someone who has a valid one
-- **Piggybacking** - attacker pretends they lost their badge and asks someone to hold the door
+- **Tailgating** - attacker has a fake badge and walks in behind someone who has a valid one, attacker pretends they lost their badge and asks someone to hold the door
+- **Piggybacking** -  Attacker just passes behind.
 - **RFID Identity Theft** (RFID skimming) - stealing an RFID card signature with a specialized device
 - **Reverse Social Engineering** - getting someone to call you and give information
   - Often happens with tech support - an email is sent to user stating they need them to call back (due to technical issue) and the user calls back
@@ -62,6 +62,7 @@
 ### <u>Tools</u>
 - Social Engineering Toolkit(SET) -  open-source Python-driven tool designed to perform advanced attacks against human elements to compromise a target to offer sensitive information.
 - Netcraft - The Netcraft Toolbar provides updated information about the sites users visit regularly and blocks dangerous sites. The toolbar provides you with a wealth of information about the sites you visit. This information will help you make an informed choice about the integrity of those sites.  It protects from phishing attacks and fraudsters.
+- Phishtank - Toolbar also for anti-phishing
 
 ### <u>Mobile-Based Attacks</u>
 
@@ -78,12 +79,13 @@
 - **Physical measures** - everything you can touch, taste, smell or get shocked by
   - Includes things like air quality, power concerns, humidity-control systems
 - **Technical measures** - smartcards and biometrics
+  -Sign-in Seal - embeds a unique image into e-mails on specific topics in order to verify the message as authentic and trusted
 - **Operational measures** - policies and procedures you set up to enforce a security-minded operation
 - **Access controls** - physical measures designed to prevent access to controlled areas
   - **Biometrics** - measures taken for authentication that come from the "something you are" concept
     - **False rejection rate** (FRR) - when a biometric rejects a valid user
     - **False acceptance rate** (FAR) - when a biometric accepts an invalid user
-    - **Crossover error rate** (CER) - combination of the two; determines how good a system is
+    - **Crossover error rate** (CER) - combination of the two; determines how good a system is, lower is better
 - Even though hackers normally don't worry about environmental disasters, this is something to think of from a pen test standpoint (hurricanes, tornados, floods, etc.)
 
 
