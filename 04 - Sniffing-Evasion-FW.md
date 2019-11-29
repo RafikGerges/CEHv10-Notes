@@ -100,7 +100,8 @@
 - Changes the cache of machines so that packets are sent to you instead of the intended target
 - **Countermeasures**
   - Dynamic ARP Inspection using DHCP snooping
-  - XArp can also watch for this
+  - xARP - tool to discover arp spoofing
+  - ARPWALL - It gives an early warning when an ARP attack occurs and simply blocks the connection.
   - Default gateway MAC can also be added permanently into each machine's cache
 - **Tools**
   - Cain and Abel
